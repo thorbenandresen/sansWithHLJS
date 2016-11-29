@@ -48,12 +48,12 @@
 pre {
   padding: 1rem;
   overflow: hidden;
-  background-color: #23241f;/*HLJS Theme Overwrite;*/
+  background-color: #23241f;/*Overwrite to match momokai-sublime theme*/
 }
 
 pre code {
   padding: 0;
-  border: transparent; /*HLJS Theme Overwrite;*/
+  border: transparent; /*Overwrite to match momokai-sublime theme*/
 }
 
 ```
