@@ -45,6 +45,8 @@
 **sansWithHLJS.iatemplate/Contents/Resources/core.css**
 ```css
 
+/*...*/
+
 pre {
   padding: 1rem;
   overflow: hidden;
@@ -55,6 +57,8 @@ pre code {
   padding: 0;
   border: transparent; /*Overwrite to match momokai-sublime theme*/
 }
+
+/*...*/
 
 ```
 
