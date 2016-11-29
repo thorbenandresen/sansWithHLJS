@@ -1,0 +1,631 @@
+/**
+ * iA Writer Template “Sans Serif”
+ *
+ * font-family: Nitti Grotesk
+ * font-size:   15px iPhone 5, 16px iPhone 6+, 17px iPad, 17px Mac, 18px
+ * line-height: 1.6667 (30px @ font-size: 18px)
+ * vert margin: 30px @ 1080px wide
+ */
+
+/* TOOLS → core.css */
+
+/* GENERIC */
+
+/* Fonts */
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 300;
+  font-style: normal;
+  src: local("NittiGrotesk-SemiLight");
+}
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 300;
+  font-style: italic;
+  src: local("NittiGrotesk-SemiLightItalic");
+}
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 400;
+  font-style: normal;
+  src: local("NittiGrotesk-Normal");
+}
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 400;
+  font-style: italic;
+  src: local("NittiGrotesk-NormalItalic");
+}
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 600;
+  font-style: normal;
+  src: local("NittiGrotesk-SemiBold");
+}
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 600;
+  font-style: italic;
+  src: local("NittiGrotesk-SemiBoldItalic");
+}
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 700;
+  font-style: normal;
+  src: local("NittiGrotesk-Bold");
+}
+
+@font-face {
+  font-family: "NittiGrotesk";
+  font-weight: 700;
+  font-style: italic;
+  src: local("NittiGrotesk-BoldItalic");
+}
+
+/* Nitti iA Small Caps */
+
+@font-face {
+  font-family: "NittiSCiA";
+  font-weight: 400;
+  /* Not supported in @font-face at time of writing
+  font-variant: small-caps;
+  text-transform: lowercase; */
+  src: local("NittiSCiA-Regular");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), print {
+  @font-face {
+    font-family: "NittiSCiA";
+    font-weight: 400;
+    /* Not supported in @font-face at time of writing
+    font-variant: small-caps;
+    text-transform: lowercase; */
+    src: local("NittiSCiA-RegularHD");
+  }
+}
+
+@font-face {
+  font-family: "NittiSCiA";
+  font-weight: 700;
+  /* Not supported in @font-face at time of writing
+  font-variant: small-caps;
+  text-transform: lowercase; */
+  src: local("NittiSCiA-Bold");
+}
+
+/* BASE */
+
+/* From min-width: 80px */
+html {
+  font-family: "NittiGrotesk", "Keyboard", sans-serif;
+  font-weight: 300; /* SemiLight weight for non-Retina (@1x) */
+  font-size: 1px; /* Overridden by responsive font sizing */
+  line-height: calc(30 / 18); /* 1.6667 = 30px @ font-size: 18px */
+}
+
+/* Normal weight for Retina… */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), print {
+  html {
+    font-weight: 400;
+  }
+}
+
+/* …but only until 414px breakpoint on OS X */
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 414px) and (min-device-width: 1152px) , (min-resolution: 192dpi) and (min-width: 414px) and (min-device-width: 1152px) {
+  html {
+    font-weight: 300;
+  }
+}
+
+/* Responsive adjustments */
+
+@media screen and (min-width: 81px) {
+  html {
+    font-size: 1.1px;
+  }
+}
+
+@media screen and (min-width: 82px) {
+  html {
+    font-size: 1.2px;
+  }
+}
+
+@media screen and (min-width: 83px) {
+  html {
+    font-size: 1.3px;
+  }
+}
+
+@media screen and (min-width: 84px) {
+  html {
+    font-size: 1.4px;
+  }
+}
+
+@media screen and (min-width: 85px) {
+  html {
+    font-size: 1.5px;
+  }
+}
+
+@media screen and (min-width: 88px) {
+  html {
+    font-size: 1.7px;
+  }
+}
+
+@media screen and (min-width: 90px) {
+  html {
+    font-size: 1.85px;
+  }
+}
+
+@media screen and (min-width: 92px) {
+  html {
+    font-size: 2px;
+  }
+}
+
+@media screen and (min-width: 97px) {
+  html {
+    font-size: 2.5px;
+  }
+}
+
+@media screen and (min-width: 105px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width: 114px) {
+  html {
+    font-size: 3.5px;
+  }
+}
+
+@media screen and (min-width: 120px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (min-width: 135px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 165px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 180px) {
+  html {
+    font-size: 8px;
+  }
+
+  .mac {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  html {
+    font-size: 9px;
+  }
+
+  .mac {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 220px) {
+  html {
+    font-size: 10px;
+  }
+
+  .mac {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  html {
+    font-size: 11px;
+  }
+
+  .mac {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 260px) {
+  html {
+    font-size: 12px;
+  }
+
+  .mac {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  html {
+    font-size: 13px;
+  }
+
+  .mac {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+
+  .mac {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* 15px @320 for iPhone 5 */
+  html {
+    font-size: 15px;
+  }
+
+  .mac {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  /* For iPhone 6+ */
+  html {
+    font-size: 16px;
+  }
+
+  .mac {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 16.5px;
+  }
+
+  .mac {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* For iPad and above */
+  html {
+    font-size: 17px;
+  }
+
+  .mac {
+    font-size: 16px;
+  }
+}
+
+/* For widescreen */
+@media screen and (min-width: 1080px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  max-width: 38em;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    max-width: 754px;
+  }
+}
+
+/* Emphasis */
+h1,
+h2,
+h3,
+h4,
+strong,
+blockquote em,
+th {
+  font-weight: 600;
+}
+
+/* Emphasis for Nitti Small Caps iA */
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* Headings */
+
+h1 {
+  margin-top: calc((60 / 23) * 1em); /* 60px @23px */
+  margin-bottom: calc((60 / 23) * 1em); /* 60px @23px */
+  font-size: calc((23 / 18) * 1em); /* 1.2778em = 23px @ font-size: 18px */
+  line-height: calc(30 / 23); /* 1.304 = 30px @ font-size: 23px */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  margin-top: calc((60 / 21) * 1em); /* 60px @21px */
+  margin-bottom: calc((30 / 18) * 1em); /* 30px @21px */
+  font-size: calc((21 / 18) * 1em); /* 1.1667em = 21px @ font-size: 18px */
+  line-height: calc(30 / 21); /* 1.4286 = 30px @ font-size: 21px */
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-top: calc((30 / 18) * 1em);
+  font-size: 1em;
+}
+
+h3,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+h3,
+h4 {
+  line-height: calc(30 / 18); /* 1.6667 = 30px @ font-size: 18px */
+}
+
+h4 {
+  font-style: italic;
+}
+
+h5,
+h6 {
+  line-height: normal; /* To avoid SC baseline being 1-2px lower in Safari */
+  font-family: "NittiSCiA", "Keyboard", sans-serif;
+  text-transform: lowercase;
+}
+
+/* Display h6 as run-in: see core.css */
+
+/* Subheading adjustments */
+
+h1 + h1 {
+  margin-top: calc((45 / 23) * -1em);
+}
+
+h1 + h2 {
+  margin-top: calc((45 / 21) * -1em);
+}
+
+h2 + h1 {
+  margin-top: calc((15 / 23) * -1em);
+}
+
+h2 + h2 {
+  margin-top: calc((15 / 21) * -1em);
+}
+
+:-webkit-any(h1, h2, h3, h4, h5, h6) + :-webkit-any(h3, h4, h5, h6),
+body > h6:first-child {
+  margin-top: 0;
+}
+
+/* Vertical margins */
+p,
+ol,
+ul,
+dl,
+figure,
+blockquote,
+pre,
+table {
+  margin: calc((30 / 18) * 1em) auto 0;
+}
+
+/* Override vertical margin between headers and block-level elements */
+:-webkit-any(h3, h4, h5) + :-webkit-any(p, ol, ul, dl, figure, blockquote, pre, table),
+:-webkit-any(h1, h2, h3, h4, h5) + h6 + *,
+hr + h6 {
+  margin-top: 0;
+}
+
+/* Lists */
+/* Use custom bullet for unordered lists */
+ul {
+  list-style: none;
+}
+
+ul > li:before {
+  content: "• ";
+  float: left; /* Take out of flow to avoid changing left edge alignment or pushing child paragraph down */
+  margin-left: calc((20 / 18) * -1em); /* -1.1111em = 20px @ font-size: 18px. em works better for RWD than % */
+}
+
+/* Indent ordered lists in blockquotes */
+blockquote ul,
+blockquote ol {
+  margin-left: calc((40 / 18) * -1em); /* -40px when width = 1080px */
+}
+
+/* Blockquotes */
+blockquote {
+  margin-left: calc((16 / 18) * -1em); /* 0.8889em = 16px when font-size: 18px */
+  margin-right: calc((16 / 18) * -1em); /* 0.8889em = 16px when font-size: 18px */
+  padding-left: calc((40 / 18) * 1em); /* 2.2222em = 40px when font-size: 18px */
+  padding-right: calc((40 / 18) * 1em); /* 2.2222em = 40px when font-size: 18px */
+  font-style: italic;
+}
+
+blockquote em strong,
+blockquote strong em {
+  font-weight: 700;
+}
+
+/* Override core.css */
+@media screen and (min-width: 100px) {
+  hr {
+    margin-top: calc((30 / 18) * 1em);
+    margin-bottom: calc((29 / 18) * 1em); /* -1px for border-bottom */
+  }
+}
+
+/* Tables: see core.css */
+
+/* Code */
+
+code,
+samp,
+kbd {
+  font-size: calc((15 / 18) * 1em); /* 0.8333 = 15px @ font-size: 18px */
+}
+
+/* Use 500 not 600 for code that inherits bold (suppliments core.css) */
+:-webkit-any(h1, h2, h3, h4, h5, h6) :-webkit-any(code, samp, kbd) {
+  font-weight: 500;
+}
+
+/* @media Rules */
+
+/* Combined horizontal line styles, supplimenting core.css */
+
+/* Adjust border color to imitate sub-pixel lines */
+@media screen and (min-width: 150px) {
+    hr,
+    caption,
+    tbody th,
+    td {
+        border-bottom-color: #888;
+    }
+
+    tbody th,
+    td {
+        border-top-color: #888;
+    }
+}
+
+/* Intended border color from 200px */
+@media screen and (min-width: 200px) {
+    hr,
+    caption,
+    tbody th,
+    td {
+        border-bottom-color: #1a1a1a;
+    }
+
+    tbody th,
+    td {
+        border-top-color: #1a1a1a;
+    }
+}
+
+/* Print styles */
+/* font-size needs to be set here again otherwise responsive typography overrides it */
+@media print {
+  html {
+    font-size: 9.1pt;
+  }
+
+  body {
+    max-width: 365pt;
+  }
+}
+
+/** OBJECTS → see core.css base styles for:
+ *  - Indent Paragraphs
+ *  - Footnotes
+ *  - Task lists
+ */
+
+/* Indent Paragraphs */
+.indent-paragraphs p + p {
+  text-indent: calc((20 / 18) * 1em); /* 1.1111em = 20px @ font-size: 18px */
+}
+
+/* Night Mode */
+
+/* Imitate sub-pixel line for narrow widths */
+
+/* First tweakpoint modifying core.css */
+@media screen and (min-width: 150px) {
+  .night-mode hr,
+  .night-mode caption,
+  .night-mode tbody th,
+  .night-mode td {
+    border-bottom-color: #888;
+  }
+
+  .night-mode tbody th,
+  .night-mode td {
+    border-top-color: #888;
+  }
+}
+
+/* Intended border color from 200px */
+@media screen and (min-width: 200px) {
+  .night-mode hr,
+  .night-mode caption,
+  .night-mode tbody th,
+  .night-mode td {
+    border-bottom-color: #dedede;
+  }
+
+  .night-mode tbody th,
+  .night-mode td {
+    border-top-color: #dedede;
+  }
+}
+
+/* Intended border color from 200px for OS X */
+@media screen and (min-width: 200px) and (min-device-width: 1152px) {
+  .night-mode hr,
+  .night-mode caption,
+  .night-mode tbody th,
+  .night-mode td {
+    border-bottom-color: #cccccc;
+  }
+
+  .night-mode tbody th,
+  .night-mode td {
+    border-top-color: #cccccc;
+  }
+}
+
+/* Footnote */
+.footnotes {
+  font-size: 1em; /* 17px @1080px wide */
+  line-height: calc(30 / 18); /* 1.6667 = 30px @ font-size: 18px */
+}
+
+/* Task Lists */
+
+.task-list-item-checkbox {
+  width: 1.6667em; /* line-height */
+  height: 1.6667em; /* same as width */
+  background-position: 60% 48%; /* tweak position */
+}

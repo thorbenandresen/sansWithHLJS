@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" media="all" href="normalize.css">
+    <link rel="stylesheet" media="all" href="core.css">
+		<link rel="stylesheet" media="all" href="style.css">
+    <link rel="stylesheet" href="hljs_styles/monokai-sublime.css">
+    <script src="highlight.pack.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function(){
+            document.body.addEventListener('ia-writer-change', function(event) {
+                var codeBlocks = document.querySelectorAll('pre code');
+                [].forEach.call(codeBlocks, function(codeBlock) {
+                    hljs.highlightBlock(codeBlock);
+                });
+            });
+        });
+    </script>
+</head>
+<body data-document>&nbsp;</body>
+</html>
