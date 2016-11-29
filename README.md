@@ -7,11 +7,11 @@
 * Learn more about custom templates for IAWriter [here](https://github.com/iainc/iA-Writer-Templates) 
 
 ##Usage
-* Drag an drop the 'sansWithHLJS.iatemplate' file into Preferences => Templates.
+* Drag an drop the `sansWithHLJS.iatemplate` file into Preferences => Templates.
 
 ##Modifications
 
-**sansWithHLJS.iatemplate.iatemplate/Contents/Resources/document.html**
+**sansWithHLJS.iatemplate/Contents/Resources/document.html**
 ```html
 
 <!doctype html>
