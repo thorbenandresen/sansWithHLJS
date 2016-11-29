@@ -1,6 +1,6 @@
 #Modern (Sans) Theme for IAWriter with Syntax Highlighting for Code Blocks
 
-* This is a modified version of the orginal Modern (Sans) Theme by [IAwriter](https://ia.net/writer) 
+* This is a modified version of the orginal Modern (Sans) theme by [IAwriter](https://ia.net/writer) 
 * Code Blocks are highlighted with [highlight.js](https://highlightjs.org/)
 * Learn more about custom templates for IAWriter [here](https://github.com/iainc/iA-Writer-Templates) 
 
